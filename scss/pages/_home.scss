@@ -1,0 +1,62 @@
+@use "../base/variables" as *;
+// Pagina de inicio
+
+.hero {
+min-height: 80vh;
+display: flex;
+align-items: center;
+background: linear-gradient(
+rgba(18, 59, 93, 0.7),
+rgba(18, 59, 93, 0.7)
+);
+
+.hero-content {
+color: $color-white;
+max-width: 700px;
+
+h1 {
+font-family: $font-secondary;
+font-size: clamp(2.5rem, 5vw, 4.5rem);
+margin-bottom: 1.5rem;
+}
+
+p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+}
+}
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 3rem;
+
+h2 {
+font-family: $font-secondary;
+color: $color-primary;
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+p {
+color: $color-gray;
+max-width: 650px;
+margin: 0 auto;
+}
+}
+
+.featured-properties {
+padding: 5rem 0;
+}
+
+.cta-section {
+padding: 5rem 0;
+background-color: $color-light;
+text-align: center;
+
+h2 {
+font-family: $font-secondary;
+color: $color-primary;
+margin-bottom: 1rem;
+}
+}

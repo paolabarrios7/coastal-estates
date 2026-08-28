@@ -1,0 +1,23 @@
+// Centrar elementos con Flexbox
+@mixin flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+// Adaptar imagenes
+@mixin image-cover {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+// Efecto hover para elementos
+@mixin hover-effect {
+transition: $transition;
+
+&:hover {
+transform: translateY(-5px);
+box-shadow: $shadow-hover;
+}
+}

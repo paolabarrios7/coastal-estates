@@ -1,0 +1,19 @@
+// Base
+@use "base/variables";
+@use "base/mixins";
+@use "base/reset";
+
+// Layout
+@use "layout/header";
+@use "layout/footer";
+
+// Components
+@use "components/buttons";
+@use "components/cards";
+
+// Pages
+@use "pages/home";
+@use "pages/nosotros";
+@use "pages/propiedades";
+@use "pages/servicios";
+@use "pages/contacto";

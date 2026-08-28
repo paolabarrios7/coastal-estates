@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1c1c1c;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .navbar {
+  padding: 1rem 0;
+}
+header .navbar .navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #123b5d;
+  transition: all 0.3s ease;
+}
+header .navbar .navbar-brand:hover {
+  color: #d4a84f;
+}
+header .navbar .nav-link {
+  color: #1c1c1c;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+header .navbar .nav-link:hover, header .navbar .nav-link.active {
+  color: #d4a84f;
+}
+
+footer {
+  background-color: #123b5d;
+  color: #ffffff;
+  padding: 3rem 0 1rem;
+}
+footer .footer-content h3 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+footer .footer-content p {
+  color: rgba(255, 255, 255, 0.8);
+}
+footer .footer-content a {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+footer .footer-content a:hover {
+  color: #d4a84f;
+}
+footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.btn-primary-custom, .btn-secondary-custom {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #123b5d;
+  color: #ffffff;
+  border: 2px solid #123b5d;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-primary-custom:hover, .btn-secondary-custom:hover {
+  background-color: #d4a84f;
+  border-color: #d4a84f;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.btn-secondary-custom {
+  background-color: transparent;
+  color: #123b5d;
+}
+.btn-secondary-custom:hover {
+  background-color: #123b5d;
+  border-color: #123b5d;
+}
+
+.card-custom {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.card-custom:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.card-custom .card-image {
+  height: 230px;
+  overflow: hidden;
+}
+.card-custom .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease;
+}
+.card-custom:hover .card-image img {
+  transform: scale(1.05);
+}
+.card-custom .card-content {
+  padding: 1.5rem;
+}
+.card-custom .card-content h3 {
+  color: #123b5d;
+  margin-bottom: 0.5rem;
+}
+.card-custom .card-content .card-price {
+  color: #d4a84f;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(18, 59, 93, 0.7), rgba(18, 59, 93, 0.7));
+}
+.hero .hero-content {
+  color: #ffffff;
+  max-width: 700px;
+}
+.hero .hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin-bottom: 1.5rem;
+}
+.hero .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.section-title h2 {
+  font-family: "Playfair Display", serif;
+  color: #123b5d;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.section-title p {
+  color: #6c757d;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.featured-properties {
+  padding: 5rem 0;
+}
+
+.cta-section {
+  padding: 5rem 0;
+  background-color: #f8f6f1;
+  text-align: center;
+}
+.cta-section h2 {
+  font-family: "Playfair Display", serif;
+  color: #123b5d;
+  margin-bottom: 1rem;
+}
+
+.about-hero {
+  padding: 6rem 0;
+  background-color: #f8f6f1;
+}
+.about-hero h1 {
+  font-family: "Playfair Display", serif;
+  color: #123b5d;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-content {
+  padding: 5rem 0;
+}
+.about-content h2 {
+  color: #123b5d;
+  margin-bottom: 1rem;
+}
+.about-content p {
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.values-section {
+  padding: 5rem 0;
+  background-color: #f8f6f1;
+}
+
+.properties-hero {
+  padding: 6rem 0;
+  background-color: #f8f6f1;
+}
+.properties-hero h1 {
+  font-family: "Playfair Display", serif;
+  color: #123b5d;
+  font-size: 3rem;
+}
+
+.properties-section {
+  padding: 5rem 0;
+}
+
+.property-filters {
+  margin-bottom: 3rem;
+}
+.property-filters .form-control,
+.property-filters .form-select {
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+
+.services-hero {
+  padding: 6rem 0;
+  background-color: #f8f6f1;
+}
+.services-hero h1 {
+  font-family: "Playfair Display", serif;
+  color: #123b5d;
+  font-size: 3rem;
+}
+
+.services-section {
+  padding: 5rem 0;
+}
+
+.service-card {
+  text-align: center;
+  padding: 2rem;
+}
+.service-card .service-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background-color: #123b5d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+.service-card:hover .service-icon {
+  background-color: #d4a84f;
+  transform: rotate(10deg) scale(1.1);
+}
+
+.contact-hero {
+  padding: 6rem 0;
+  background-color: #f8f6f1;
+}
+.contact-hero h1 {
+  font-family: "Playfair Display", serif;
+  color: #123b5d;
+  font-size: 3rem;
+}
+
+.contact-section {
+  padding: 5rem 0;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.contact-form .form-control {
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+.contact-form .form-control:focus {
+  border-color: #123b5d;
+  box-shadow: 0 0 0 0.2rem rgba(18, 59, 93, 0.15);
+}
+
+.contact-info h2 {
+  color: #123b5d;
+  margin-bottom: 1.5rem;
+}
+.contact-info p {
+  margin-bottom: 0.8rem;
+}/*# sourceMappingURL=style.css.map */

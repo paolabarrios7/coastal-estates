@@ -1,0 +1,67 @@
+@use "../base/variables" as *;
+
+// Página Servicios
+
+.services-hero {
+padding: 80px 0;
+background-color: $color-light;
+text-align: center;
+
+.section-title {
+max-width: 850px;
+margin: 0 auto;
+}
+
+h1 {
+margin: 20px 0;
+color: $color-primary;
+}
+
+p {
+max-width: 700px;
+margin: 0 auto;
+line-height: 1.8;
+}
+}
+
+.services-section {
+padding: 80px 0;
+background-color: $color-white;
+
+.row {
+align-items: stretch;
+}
+}
+
+.service-card {
+height: 100%;
+padding: 40px 30px;
+background-color: $color-white;
+border-radius: $border-radius;
+box-shadow: $shadow;
+text-align: center;
+transition: $transition;
+
+&:hover {
+transform: translateY(-8px);
+box-shadow: $shadow-hover;
+}
+
+.service-icon {
+font-size: 3rem;
+margin-bottom: 20px;
+}
+
+h2 {
+font-family: $font-secondary;
+font-size: 1.5rem;
+color: $color-primary;
+margin-bottom: 15px;
+}
+
+p {
+color: $color-gray;
+line-height: 1.7;
+margin-bottom: 25px;
+}
+}

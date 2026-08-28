@@ -1,0 +1,37 @@
+@use "../base/variables" as *;
+// Header principal
+header {
+background-color: $color-white;
+box-shadow: $shadow;
+position: sticky;
+top: 0;
+z-index: 1000;
+
+.navbar {
+padding: 1rem 0;
+
+.navbar-brand {
+font-family: $font-secondary;
+font-size: 1.8rem;
+font-weight: 700;
+color: $color-primary;
+transition: $transition;
+
+&:hover {
+color: $color-secondary;
+}
+}
+
+.nav-link {
+color: $color-dark;
+font-weight: 500;
+margin-left: 1rem;
+transition: $transition;
+
+&:hover,
+&.active {
+color: $color-secondary;
+}
+}
+}
+}

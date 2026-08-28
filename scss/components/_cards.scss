@@ -1,0 +1,60 @@
+@use "../base/variables" as *;
+// Tarjetas de propiedades
+
+.card-custom {
+background-color: $color-white;
+border-radius: $border-radius;
+box-shadow: $shadow;
+overflow: hidden;
+transition: $transition;
+height: 100%;
+
+&:hover {
+transform: translateY(-8px);
+box-shadow: $shadow-hover;
+}
+
+.card-image {
+width: 100%;
+height: 240px;
+overflow: hidden;
+
+img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: $transition;
+}
+}
+
+&:hover {
+.card-image img {
+transform: scale(1.05);
+}
+}
+
+.card-content {
+padding: 25px;
+
+h3 {
+font-family: $font-secondary;
+font-size: 1.5rem;
+margin-bottom: 10px;
+color: $color-dark;
+}
+
+.card-price {
+font-weight: 600;
+color: $color-primary;
+font-size: 1.2rem;
+margin-bottom: 12px;
+}
+
+p {
+color: $color-gray;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+}
+}

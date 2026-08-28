@@ -1,0 +1,31 @@
+@use "../base/variables" as *;
+// Boton principal
+.btn-primary-custom {
+display: inline-block;
+padding: 0.8rem 1.8rem;
+background-color: $color-primary;
+color: $color-white;
+border: 2px solid $color-primary;
+border-radius: $border-radius;
+font-weight: 600;
+transition: $transition;
+
+&:hover {
+background-color: $color-secondary;
+border-color: $color-secondary;
+color: $color-white;
+transform: translateY(-3px);
+}
+}
+
+// Boton secundario
+.btn-secondary-custom {
+@extend .btn-primary-custom;
+background-color: transparent;
+color: $color-primary;
+
+&:hover {
+background-color: $color-primary;
+border-color: $color-primary;
+}
+}
